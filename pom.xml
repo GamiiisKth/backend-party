@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>se.joshua</groupId>
+    <artifactId>component-party</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <modules>
+        <module>component-party-client</module>
+        <module>component-party-domain</module>
+        <module>component-party-domain-mapper</module>
+        <module>component-party-entity</module>
+        <module>component-party-service</module>
+        <module>component-party-service-impl</module>
+        <module>component-party-dao</module>
+        <module>component-party-dao-impl</module>
+        <module>component-party-dependency-management</module>
+        <module>component-party-test</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.so4it.sugar</groupId>
+                <artifactId>id-dependency-management</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+<dependencies>
+    <dependency>
+        <groupId>com.so4it.sugar</groupId>
+        <artifactId>platform-provided-dependencies-2.0.0</artifactId>
+        <type>pom</type>
+        <version>0.0.1-SNAPSHOT</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
+</project>
