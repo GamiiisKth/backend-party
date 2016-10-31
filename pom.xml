@@ -7,7 +7,7 @@
     <groupId>se.joshua</groupId>
     <artifactId>component-party</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
+    <packaging>pom</packaging>
     <modules>
         <module>component-party-client</module>
         <module>component-party-domain</module>
@@ -20,6 +20,9 @@
         <module>component-party-dependency-management</module>
         <module>component-party-test</module>
     </modules>
+    <properties>
+        <common.version>0.0.1-SNAPSHOT</common.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -29,6 +32,17 @@
                 <version>0.0.1-SNAPSHOT</version>
                 <scope>import</scope>
                 <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.so4it.sugar</groupId>
+                <artifactId>common-component-entity</artifactId>
+                <version>${common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.so4it.sugar</groupId>
+                <artifactId>common-util</artifactId>
+                <version>${common.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -42,4 +56,20 @@
         <scope>provided</scope>
     </dependency>
 </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.5.1</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>

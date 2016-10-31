@@ -10,9 +10,15 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>se.joshua</groupId>
     <artifactId>component-party-domain</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    
+
+    <dependencies>
+        <dependency>
+            <groupId>com.so4it.sugar</groupId>
+            <artifactId>common-util</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>

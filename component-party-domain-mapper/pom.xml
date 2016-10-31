@@ -10,9 +10,22 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>se.joshua</groupId>
     <artifactId>component-party-domain-mapper</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>se.joshua</groupId>
+            <artifactId>component-party-domain</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>se.joshua</groupId>
+            <artifactId>component-party-entity</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
     
 </project>
