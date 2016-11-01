@@ -15,4 +15,14 @@
         <module>backend-party-runner</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.so4it.sugar</groupId>
+            <artifactId>platform-provided-dependencies-2.0.0</artifactId>
+            <type>pom</type>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
 </project>

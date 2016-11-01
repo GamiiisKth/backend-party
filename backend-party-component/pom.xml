@@ -11,6 +11,16 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <repositories>
+    <repository>
+        <id>central</id>
+        <url>http://repo.maven.apache.org/maven2</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+    </repository>
+
+    </repositories>
 
     <artifactId>backend-component-party</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -65,15 +75,6 @@
         </dependencies>
     </dependencyManagement>
 
-<dependencies>
-    <dependency>
-        <groupId>com.so4it.sugar</groupId>
-        <artifactId>platform-provided-dependencies-2.0.0</artifactId>
-        <type>pom</type>
-        <version>0.0.1-SNAPSHOT</version>
-        <scope>provided</scope>
-    </dependency>
-</dependencies>
 
     <build>
         <pluginManagement>
