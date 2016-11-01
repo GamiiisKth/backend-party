@@ -6,12 +6,19 @@
 
     <parent>
         <groupId>se.joshua</groupId>
-        <artifactId>party</artifactId>
+        <artifactId>backend-party</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>backend-party-configuration</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>com.so4it.sugar</groupId>
+            <artifactId>common-gigaspaces</artifactId>
+        </dependency>
+    </dependencies>
     
 </project>

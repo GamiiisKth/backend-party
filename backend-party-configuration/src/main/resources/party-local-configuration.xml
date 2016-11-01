@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <import resource="classpath*:componenet-party-service.xml"/>
-    <import resource="classpath*:backend-component-party-dao.xml"/>
+    <import resource="classpath*:component-party-service.xml"/>
+    <import resource="classpath*:component-party-dao.xml"/>
 
 </beans>

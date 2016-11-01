@@ -1,8 +1,8 @@
-package se.joshua.party.runner.client;
+package se.joshua.party.client;
 
 import se.joshua.party.runner.domain.CreatePlayerRequest;
 import se.joshua.party.runner.domain.Player;
-import se.joshua.party.runner.service.PlayerService;
+import se.joshua.party.service.PlayerService;
 
 import java.util.Set;
 

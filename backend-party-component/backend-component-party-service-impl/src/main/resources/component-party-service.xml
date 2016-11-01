@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="playerService" class="se.joshua.party.runner.service.PlayerServiceImpl">
+    <bean id="playerService" class="se.joshua.party.service.PlayerServiceImpl">
         <constructor-arg name="playerEntityDao" ref="playerEntityDao"/>
     </bean>
 </beans>

@@ -1,4 +1,4 @@
-package se.joshua.party.runner.service;
+package se.joshua.party.service;
 
 import org.openspaces.remoting.ExecutorRemotingMethod;
 import org.openspaces.remoting.Routing;

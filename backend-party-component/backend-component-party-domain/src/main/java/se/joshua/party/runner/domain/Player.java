@@ -1,6 +1,8 @@
 package se.joshua.party.runner.domain;
 
-import com.so4it.common.util.object.Required;
+
+
+import com.so4it.common.util.Required;
 
 import java.io.Serializable;
 import java.time.LocalDate;

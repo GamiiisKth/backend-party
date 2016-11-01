@@ -1,4 +1,4 @@
-package se.joshua.party.runner.dao;
+package se.joshua.party.dao;
 
 import com.so4it.common.dao.gs.AbstractSpaceDao;
 import org.openspaces.core.GigaSpace;

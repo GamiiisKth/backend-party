@@ -1,6 +1,6 @@
-package se.joshua.party.runner.service;
+package se.joshua.party.service;
 
-import se.joshua.party.runner.dao.PlayerEntityDao;
+import se.joshua.party.dao.PlayerEntityDao;
 import se.joshua.party.runner.domain.CreatePlayerRequest;
 import se.joshua.party.runner.domain.Player;
 import se.joshua.party.runner.domainMapper.PlayerMapper;
