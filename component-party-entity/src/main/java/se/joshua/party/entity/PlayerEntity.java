@@ -14,9 +14,9 @@ import java.util.Set;
  * @author Ali yusha {@literal <mailto:ali.yusha@so4it.com>}
  */
 @SpaceClass
-public class SpacePlayer extends IdEntity<Long> {
+public class PlayerEntity extends IdEntity<String> {
 
-    private Long id;
+    private String id;
     private String firstName;
     private String lastName;
     private LocalDate startDate;
@@ -26,7 +26,7 @@ public class SpacePlayer extends IdEntity<Long> {
     private Set<Long> attributes;
 
 
-    public SpacePlayer(Builder builder) {
+    public PlayerEntity(Builder builder) {
         this.id = builder.id;
         this.firstName = Required.notNull(builder.firstName, "firstName", builder.isTemplate());
         this.lastName = Required.notNull(builder.lastName, "lastName", builder.isTemplate());
@@ -40,7 +40,7 @@ public class SpacePlayer extends IdEntity<Long> {
 
     @Override
     @SpaceId(autoGenerate = true)
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
@@ -107,8 +107,8 @@ public class SpacePlayer extends IdEntity<Long> {
         return new Builder(false);
     }
 
-    public static class Builder extends AbstractEntityBuilder<SpacePlayer> {
-        private Long id;
+    public static class Builder extends AbstractEntityBuilder<PlayerEntity> {
+        private String id;
         private String firstName;
         private String lastName;
         private LocalDate startDate;
@@ -160,15 +160,15 @@ public class SpacePlayer extends IdEntity<Long> {
             return this;
         }
 
-        public Builder withId(Long id) {
+        public Builder withId(String id) {
             this.id = id;
             return this;
         }
 
 
         @Override
-        public SpacePlayer build() {
-            return new SpacePlayer(this);
+        public PlayerEntity build() {
+            return new PlayerEntity(this);
         }
     }
 }

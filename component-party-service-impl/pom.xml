@@ -10,9 +10,31 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>se.joshua</groupId>
     <artifactId>component-party-service-impl</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>se.joshua</groupId>
+            <artifactId>component-party-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>se.joshua</groupId>
+            <artifactId>component-party-dao</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>se.joshua</groupId>
+            <artifactId>component-party-domain-mapper</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.so4it.sugar</groupId>
+            <artifactId>common-util</artifactId>
+        </dependency>
+    </dependencies>
     
 </project>

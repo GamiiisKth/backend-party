@@ -10,9 +10,15 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>se.joshua</groupId>
     <artifactId>component-party-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>se.joshua</groupId>
+            <artifactId>component-party-domain</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
     
 </project>

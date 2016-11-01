@@ -44,6 +44,17 @@
                 <artifactId>common-util</artifactId>
                 <version>${common.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.so4it.sugar</groupId>
+                <artifactId>common-component-dao</artifactId>
+                <version>${common.version}</version>
+            </dependency>
+          <dependency>
+                <groupId>com.so4it.sugar</groupId>
+                <artifactId>common-component-dao-gs</artifactId>
+                <version>${common.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
