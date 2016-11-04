@@ -12,7 +12,6 @@
     <modules>
         <module>backend-party-component</module>
         <module>backend-party-configuration</module>
-        <module>backend-party-runner</module>
         <module>backend-party-util</module>
     </modules>
 
