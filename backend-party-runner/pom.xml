@@ -24,6 +24,8 @@
 
     <dependencyManagement>
         <dependencies>
+
+
             <!--
                Common dependencies
            -->
@@ -51,6 +53,24 @@
     </dependencyManagement>
 
     <dependencies>
+
+        <dependency>
+            <groupId>se.joshua</groupId>
+            <artifactId>backend-party-configuration</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>se.joshua</groupId>
+            <artifactId>backend-component-party-entity</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>se.joshua</groupId>
+            <artifactId>backend-component-party-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
         <dependency>
             <groupId>se.joshua</groupId>

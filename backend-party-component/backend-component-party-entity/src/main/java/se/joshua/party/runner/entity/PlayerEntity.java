@@ -5,7 +5,7 @@ import com.gigaspaces.annotation.pojo.SpaceId;
 import com.gigaspaces.annotation.pojo.SpaceRouting;
 import com.so4it.common.component.entity.AbstractEntityBuilder;
 import com.so4it.common.component.entity.IdEntity;
-import com.so4it.common.util.Required;
+import com.so4it.common.util.object.Required;
 
 
 import java.time.LocalDate;
@@ -27,6 +27,10 @@ public class PlayerEntity extends IdEntity<String> {
     private Set<Long> attributes;
 
 
+    public PlayerEntity() {
+
+    }
+
     public PlayerEntity(Builder builder) {
         this.id = builder.id;
         this.firstName = Required.notNull(builder.firstName, "firstName", builder.isTemplate());
@@ -35,7 +39,7 @@ public class PlayerEntity extends IdEntity<String> {
         this.endDate = Required.notNull(builder.endDate, "endDate", builder.isTemplate());
         this.email = Required.notNull(builder.email, "email", builder.isTemplate());
         this.userName = Required.notNull(builder.userName, "userName", builder.isTemplate());
-        this.attributes = Required.notNull(builder.attributes, "attributes", builder.isTemplate());
+       // this.attributes = Required.notNull(builder.attributes, "attributes", builder.isTemplate());
     }
 
 
@@ -92,6 +96,10 @@ public class PlayerEntity extends IdEntity<String> {
 
     public void setAttributes(Set<Long> attributes) {
         this.attributes = attributes;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     @SpaceRouting

@@ -12,8 +12,8 @@
     
 
     <bean id="partyRemoteGigaSpaceFactory" class="com.so4it.common.util.gs.GigaSpaceFactoryImpl">
-        <constructor-arg name="name" value="${ID_SPACE_NAME}"/>
-        <constructor-arg name="lookupLocators" value="${LOOKUPLOCATORS}"/>
+        <constructor-arg name="name" value="party"/>
+        <constructor-arg name="lookupLocators" value="127.0.0.1"/>
     </bean>
 
     <bean id="nonBlockingExponentialBackOff" class="com.so4it.common.util.backoff.NonBlockingExponentialBackOff">
@@ -22,7 +22,7 @@
         <constructor-arg name="maxPeriodMillis" value="60000"/>
     </bean>
 
-    <bean id="idGigaSpace" class="com.so4it.common.util.gs.proxy.GigaSpaceCircuitBreakerImpl"
+    <bean id="partyGigaspace" class="com.so4it.common.util.gs.proxy.GigaSpaceCircuitBreakerImpl"
           init-method="openCircuitBreaker">
         <constructor-arg name="gigaSpaceFactory" ref="partyRemoteGigaSpaceFactory"/>
         <constructor-arg name="backoff" ref="nonBlockingExponentialBackOff"/>
@@ -30,8 +30,8 @@
 
 
     <os-remoting:executor-proxy
-            id="idService"
-            giga-space="idGigaSpace"
+            id="partyService"
+            giga-space="partyGigaspace"
             interface="se.joshua.party.service.PlayerService">
     </os-remoting:executor-proxy>
 

@@ -1,4 +1,4 @@
-package se.joshua.party.service;
+package se.joshua.party.util;
 
 import org.openspaces.remoting.RemoteResultReducer;
 import org.openspaces.remoting.SpaceRemotingInvocation;

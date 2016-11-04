@@ -2,7 +2,7 @@ package se.joshua.party.runner.domain;
 
 
 
-import com.so4it.common.util.Required;
+import com.so4it.common.util.object.Required;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -34,7 +34,7 @@ public class Player implements Serializable {
         this.endDate = Required.notNull(builder.endDate, "endDate");
         this.email = Required.notNull(builder.email, "email");
         this.userName = Required.notNull(builder.userName, "userName");
-        this.attributes = Required.notNull(builder.attributes, "attributes");
+        //this.attributes = Required.notNull(builder.attributes, "attributes");
     }
 
     public String getFirstName() {
@@ -146,5 +146,16 @@ public class Player implements Serializable {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "Player{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", email='" + email + '\'' +
+                ", userName='" + userName + '\'' +
+                ", attributes=" + attributes +
+                '}';
+    }
 }

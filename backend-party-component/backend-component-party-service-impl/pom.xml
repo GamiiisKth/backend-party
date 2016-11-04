@@ -16,6 +16,12 @@
     <dependencies>
         <dependency>
             <groupId>se.joshua</groupId>
+            <artifactId>backend-party-util</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>se.joshua</groupId>
             <artifactId>backend-component-party-service</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>

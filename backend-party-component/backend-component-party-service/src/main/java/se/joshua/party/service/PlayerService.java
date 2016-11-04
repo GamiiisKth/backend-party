@@ -12,13 +12,13 @@ import java.util.Set;
  */
 public interface PlayerService {
 
-    @ExecutorRemotingMethod(broadcast = false)
+    @ExecutorRemotingMethod(broadcast = true)
     Player getPlayerByUserName(@Routing String userName);
 
-    @ExecutorRemotingMethod(broadcast = false)
+    @ExecutorRemotingMethod(broadcast = false )
     void createPlayer(@Routing("getUserName") CreatePlayerRequest createPlayerRequest);
 
-    @ExecutorRemotingMethod(broadcast = true)
+    @ExecutorRemotingMethod(broadcast = true, remoteResultReducer = "objectListResultReducer")
     Set<Player> getPlayers();
 
 }
